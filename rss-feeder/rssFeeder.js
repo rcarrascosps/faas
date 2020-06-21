@@ -32,7 +32,7 @@ async function processRSS(rssURL, filename) {
         method: 'POST', uri: endpoint,
         json: true,
         body: {
-            "bucketname": process.env['bucketName']
+            "bucketname": process.env.bucketName
             , "filename": filename
             , "contents": JSON.stringify(result)
         },
